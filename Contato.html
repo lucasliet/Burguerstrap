@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg"
+        type="image/x-icon">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-preto fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
+                    class="d-inline-block align-top" alt="">
+                Bootstrap
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="produtos()">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="faq()">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato <span class="sr-only">(página atual)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+
+    </section>
+
+    <div id="corpo">
+        <!-- imagem -->
+        <!-- Formulario com o mapa -->
+        <section class="section">
+            <div class="mt-5 text-light bg-preto p-2 text-center">
+                <h1>Fale Conosco</h1>
+            </div>
+            <form>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 bg-preto p-4">
+                            <div class="form-group">
+                                <label for="idNome" class="text-light">Nome</label>
+                                <input type="nome" class="form-control" id="idNome" placeholder="Digite o seu nome...">
+                            </div>
+                            <div class="form-group">
+                                <label for="idEmail" class="text-light">E-mail</label>
+                                <input type="email" class="form-control" id="idEmail" placeholder="nome@exemplo.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="idAssunto" class="text-light">Assunto</label>
+                                <select class="form-control" id="idAssunto">
+                                    <option>Escolha o assunto</option>
+                                    <option>Dúvidas</option>
+                                    <option>Sugestões</option>
+                                    <option>Reclamações</option>
+                                    <option>Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="idMensagem" class="text-light">Mensagem</label>
+                                <textarea class="form-control" id="idMensagem" placeholder="Sua mensagem..."
+                                    rows="4"></textarea>
+                            </div>
+                            <div class="button text-right">
+                                <button class="btn btn-secondary" type="submit" onclick="add()">Enviar</button>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="map-container-google-11">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9921675840283!2d-46.71596748502208!3d-23.568724784679336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59365eb465ab%3A0x69089613db4c82a8!2sUniversidade%20S%C3%A3o%20Judas%20Tadeu%20Butant%C3%A3!5e0!3m2!1spt-BR!2sbr!4v1573328288595!5m2!1spt-BR!2sbr"
+                                width="100%" height="515" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </div>
+    <footer class="section footer-classic context-dark bg-preto">
+        <!-- <div class="container p-4">
+                        <div class="row row-30">
+                            <div class="col-md-4 col-xl-5">
+                                <div class="pr-xl-4">
+                                    <a class="brand" href="index.html">
+                                        <img class="brand-logo-light mb-2"
+                                            src="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg" alt=""
+                                            width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x">
+                                    </a>
+                                    <p>We are an award-winning creative agency, dedicated to the best result in web design,
+                                        promotion, business consulting, and marketing.</p>
+                                    <p class="rights"><span>©  </span><span
+                                            class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
+                                            Rights Reserved.</span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Contacts</h5>
+                                <dl class="contact-list">
+                                    <dt>Address:</dt>
+                                    <dd>798 South Park Avenue, Jaipur, Raj</dd>
+                                </dl>
+                                <dl class="contact-list">
+                                    <dt>email:</dt>
+                                    <dd><a href="mailto:#">dkstudioin@gmail.com</a></dd>
+                                </dl>
+                                <dl class="contact-list">
+                                    <dt>phones:</dt>
+                                    <dd><a href="tel:#">https://karosearch.com</a> <span>or</span> <a
+                                            href="tel:#">https://karosearch.com</a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="col-md-4 col-xl-3">
+                                    <h5>Menu</h5>
+                                    <ul class="nav-list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Cardápio</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div> -->
+        <div class="container pt-5 border-bottom">
+            <div class="row justify-content-md-center">
+                <div class="col-md-9 col-sm-12">
+                    <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Solutions</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Sales</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Project
+                                    Management</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Workforce</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">
+                                    E-Commerce</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Finance</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Business
+                                    Apps</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Developers</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Open
+                                    Source</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Technology</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Company</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#"></i>About</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"></i>
+                                    Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Connect</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-linkedin mr-1"></i> LinkedIn</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-twitter mr-1"></i> Twitter</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-reddit mr-1"></i> Reddit</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-google-plus mr-1"></i> Google+</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-github mr-1"></i> Github</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-medium mr-1"></i> Medium</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-facebook mr-1"></i> Facebook</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-youtube mr-1"></i> YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Vendor/bootstrap/jquery-3.3.1.slim.min.js"></script>
+    <script src="Vendor/bootstrap/popper.min.js"></script>
+    <script src="Vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="js/produtos.js"></script>
+    <script src="js/faq.js"></script>
+</body>
+
+</html>

@@ -8,72 +8,16 @@
     <link rel="shortcut icon" href="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg"
         type="image/x-icon">
     <title>Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url('images/ebano.jpg');
-            background-size: 100%;
-            background-attachment: fixed;
-        }
-
-        .mh-500px {
-            max-height: 500px;
-        }
-        
-        .bg-preto {
-            background-color: #222;
-        }
-        /* Footer */
-        .context-dark,
-        .bg-gray-dark,
-        .bg-primary {
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .footer-classic a,
-        .footer-classic a:focus,
-        .footer-classic a:active {
-            color: #ffffff;
-        }
-
-        .nav-list li {
-            padding-top: 5px;
-            padding-bottom: 5px;
-        }
-
-        .nav-list li a:hover:before {
-            margin-left: 0;
-            opacity: 1;
-            visibility: visible;
-        }
-
-        ul,
-        ol {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .nav-list li a:before {
-            content: "\f14f";
-            font: 400 21px/1 "Material Design Icons";
-            color: #4d6de6;
-            display: inline-block;
-            vertical-align: baseline;
-            margin-left: -28px;
-            margin-right: 7px;
-            opacity: 0;
-            visibility: hidden;
-            transition: .22s ease;
-        }
-    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-preto fixed-top">
-            <a class="navbar-brand" href="#">
+            <a class="text-white navbar-brand" onclick="home()">
                 <img src="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30"
                     class="d-inline-block align-top" alt="">
                 Bootstrap
@@ -86,17 +30,18 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                        <a class="nav-link" onclick="home()">Home <span class="sr-only">(página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Produtos</a>
+                        <a class="nav-link" onclick="produtos()">Cardápio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" onclick="faq()">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+                        <a class="nav-link" href="Contato.html">Contato</a>
                     </li>
+                    <!--
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -109,9 +54,7 @@
                             <a class="dropdown-item" href="#">Algo mais aqui</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#">Desativado</a>
-                    </li>
+                     -->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -121,183 +64,192 @@
         </nav>
     </header>
 
-    <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner mh-500px">
-                <div class="carousel-item active">
-                    <img class="d-block w-100"
-                        src="https://conteudo.imguol.com.br/45/2018/07/17/mao-santa-burguer-1531851949973_v2_900x506.jpg"
-                        alt="Primeiro Slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://conteudo.imguol.com.br/c/publicidade/a3/2017/08/29/hamburguer-angus-com-bacon-queijo-gruyere-cogumelos-salteados-e-baby-rucula-1504037893800_v2_750x421.jpg"
-                        alt="Segundo Slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100"
-                        src="https://statig0.akamaized.net/bancodeimagens/at/fn/9r/atfn9reagx5hg9383kbd2cx1r.jpg"
-                        alt="Terceiro Slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="card m-3" style="width: 18rem;">
-                    <img class="card-img-top"
-                        src="https://conteudo.imguol.com.br/45/2018/07/17/mao-santa-burguer-1531851949973_v2_900x506.jpg"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-                <div class="card m-3" style="width: 18rem;">
-                    <img class="card-img-top"
-                        src="https://conteudo.imguol.com.br/c/publicidade/a3/2017/08/29/hamburguer-angus-com-bacon-queijo-gruyere-cogumelos-salteados-e-baby-rucula-1504037893800_v2_750x421.jpg"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-                <div class="card m-3" style="width: 18rem;">
-                    <img class="card-img-top"
-                        src="https://statig0.akamaized.net/bancodeimagens/at/fn/9r/atfn9reagx5hg9383kbd2cx1r.jpg"
-                        alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="card">
-            <div class="card-header">
-                <h3>Sobre</h3>
-            </div>
-            <div class="row p-3">
-                <img class="rounded ml-3 shadow p-2" style="max-width: 30rem;"
-                    src="https://cdn-landing.arquivei.com.br/blog/wp-content/uploads/2017/09/tipos-empresas-1200_og-770x404.jpg"
-                    alt="">
-                <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container p-4">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="corpo">
+        <!--Carrossel Banner-->
+        <section>
+            <div id="banner" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                 </ol>
-                <div class="carousel-inner">
+                <div class="carousel-inner mh-100vh">
                     <div class="carousel-item active">
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="https://www.irreverentgent.com/wp-content/uploads/2018/03/Awesome-Profile-Pictures-for-Guys-look-away2.jpg"
-                                        class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img class="d-block w-100" src="images/hamburger1.jpg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="https://www.irreverentgent.com/wp-content/uploads/2018/03/Awesome-Profile-Pictures-for-Guys-look-away2.jpg"
-                                        class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img class="d-block w-100" src="images/hamburger2.jpg" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                     </div>
                     <div class="carousel-item">
-                        <div class="card mb-3">
-                            <div class="row no-gutters">
-                                <div class="col-md-4">
-                                    <img src="https://www.irreverentgent.com/wp-content/uploads/2018/03/Awesome-Profile-Pictures-for-Guys-look-away2.jpg"
-                                        class="card-img" alt="...">
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.
-                                        </p>
-                                    </div>
-                                </div>
+                        <img class="d-block w-100" src="images/hamburger3.jpg" alt="Terceiro Slide">
+                    </div>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#banner" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#banner" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="card m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="images/hamburger1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="images/hamburger2.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="card m-3" style="width: 18rem;">
+                        <img class="card-img-top" src="images/hamburger3.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre nós -->
+        <section>
+            <div class="container-fluid">
+                <div class="card" style="border: none;">
+                    <div class="card-header text-white bg-preto">
+                        <h3>Sobre</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <img class="col-sm rounded shadow" style="max-width: 30rem;"
+                                src="https://cdn-landing.arquivei.com.br/blog/wp-content/uploads/2017/09/tipos-empresas-1200_og-770x404.jpg"
+                                alt="">
+                            <div class="col-sm">
+                                <blockquote class="blockquote">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                                    ante.
+                                </blockquote>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
-        </div>
-    </section>
+        </section>
+
+        <section>
+            <div class="container">
+                <div id="creators" class="carousel slide p-3" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://avatars0.githubusercontent.com/u/49222261?s=460&v=4"
+                                            class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Lucas Oliveira</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://avatars3.githubusercontent.com/u/29801612?s=460&v=4"
+                                            class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Leonardo Gil</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card mb-3">
+                                <div class="row no-gutters">
+                                    <div class="col-md-4">
+                                        <img src="https://avatars0.githubusercontent.com/u/49222261?s=460&v=4"
+                                            class="card-img" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Jonathan Araujo</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#creators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon black-control-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#creators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon black-control-next" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <footer class="section footer-classic context-dark bg-preto">
-        <div class="container p-4">
+        <!-- <div class="container p-4">
             <div class="row row-30">
                 <div class="col-md-4 col-xl-5">
                     <div class="pr-xl-4">
                         <a class="brand" href="index.html">
                             <img class="brand-logo-light mb-2"
-                                    src="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg" alt=""
-                                    width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x">
+                                src="https://getbootstrap.com.br/docs/4.1/assets/brand/bootstrap-solid.svg" alt=""
+                                width="140" height="37" srcset="images/agency/logo-retina-inverse-280x74.png 2x">
                         </a>
                         <p>We are an award-winning creative agency, dedicated to the best result in web design,
                             promotion, business consulting, and marketing.</p>
-                        <!-- Rights-->
                         <p class="rights"><span>©  </span><span
                                 class="copyright-year">2018</span><span> </span><span>Waves</span><span>. </span><span>All
                                 Rights Reserved.</span></p>
@@ -324,10 +276,94 @@
                     <h5>Menu</h5>
                     <ul class="nav-list">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Produtos</a></li>
+                        <li><a href="#">Cardápio</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
+                </div>
+            </div>
+        </div> -->
+        <div class="container pt-5 border-bottom">
+            <div class="row justify-content-md-center">
+                <div class="col-md-9 col-sm-12">
+                    <div class="col-md-3 col-sm-6 col-6 p-0 float-left mb-3">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Solutions</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Sales</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Project
+                                    Management</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Workforce</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">
+                                    E-Commerce</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Finance</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Business
+                                    Apps</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 p-0 mb-3 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Developers</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#">Open
+                                    Source</a>
+                            </li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#">Technology</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Company</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a
+                                    href="#"></i>About</a></li>
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2"><a href="#"></i>
+                                    Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-6 mb-3 p-0 float-left">
+                        <h5 class="mb-4 font-weight-bold text-white text-uppercase">Connect</h5>
+                        <ul class="list-group">
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-linkedin mr-1"></i> LinkedIn</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-twitter mr-1"></i> Twitter</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#"><i class="fa fa-reddit mr-1"></i> Reddit</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-google-plus mr-1"></i> Google+</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-github mr-1"></i> Github</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-medium mr-1"></i> Medium</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-facebook mr-1"></i> Facebook</a>
+                            </li>
+
+                            <li class="link-grow list-group-item bg-transparent border-0 p-0 mb-2">
+                                <a href="#" target="_blank"><i class="fa fa-youtube mr-1"></i> YouTube</a>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -343,6 +379,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/produtos.js"></script>
 </body>
 
 </html>
