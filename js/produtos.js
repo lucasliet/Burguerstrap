@@ -5,7 +5,7 @@ function home() {
 function produtos() {
     var galeria = "";
 
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 6; i++) {
         galeria += `
             <div class="card m-3" style="width: 19rem;">
                 <img alt="picture"
