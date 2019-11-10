@@ -4,17 +4,11 @@ body {
     background-attachment: fixed;
 }
 
-a {
-    cursor: pointer;
-}
+a { cursor: pointer; }
 
-.mh-100vh {
-    max-height: 100vh;
-}
+.mh-100vh { max-height: 100vh; }
 
-.bg-preto {
-    background-color: #222;
-}
+.bg-preto { background-color: #222; }
 
 .card button {
     border: none;
@@ -24,6 +18,7 @@ a {
 }
 
 .lupa {
+    cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -31,7 +26,7 @@ a {
     padding: 4px;
     border: none;
     border-radius: 100%;
-    background-color: rgba(44, 44, 44, 0.4);
+    background-color: rgba(44, 44, 44, 0.7);
     line-height: normal;
 }
 
