@@ -53,8 +53,7 @@ a {
 
 /* Footer  NÃO MEXER */
 
-/* GUARDAR NO CORACAO */
-html { height: 100%; }
+/* html { height: 100%; }
 body {
     min-height:100%; 
     position:relative; 
@@ -63,10 +62,9 @@ body {
 footer { 
     position: absolute; 
     left: 0 ; right: 0; bottom: 0; 
-    height: auto;
+    height: 370px;
     background: #ebf4fa;
-}
-/* -- GUARDAR NO CORACAO -- */
+} */
 
 footer h5 {
     font-size: 1rem;
