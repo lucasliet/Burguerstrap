@@ -50,4 +50,5 @@ function loadPage(page) {
         document.documentElement.scrollTop = 0;
     };
     xhr.send();
+    document.getElementById('burguermenu').click();
 }
