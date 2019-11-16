@@ -39,13 +39,6 @@ a {
     }
 }
 
-.accordion button {
-    border: none;
-    text-decoration: none;
-    padding: 0px;
-    text-align: left;
-}
-
 .accordion .card-header :hover {
     background-color: #7035a7;
     cursor: pointer!important;
