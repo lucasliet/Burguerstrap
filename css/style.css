@@ -31,11 +31,11 @@ a {
 
 @media only screen and (max-width: 480px) {
     .banner-img {
-        background: url('../images/bannermobile.jpg') center no-repeat!important;
+        background: url('../images/bannermobile.gif') center no-repeat!important;
     }
     
     .banner {
-        background: url('../images/bannermobile.jpg') center no-repeat!important;
+        background: url('../images/bannermobile.gif') center no-repeat!important;
     }
 }
 
