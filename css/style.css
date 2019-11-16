@@ -16,10 +16,27 @@ a {
     background-color: #222;
 }
 
+.btn-purple{ 
+    background-color: #7035a7; 
+    color: #eee;
+}
+
+.btn-purple:hover { background-color: #572a82; }
+
 .nav-link:hover {
     background-color: #7035a7;
     transition: 0.3s;
     border-radius: 12px;
+}
+
+@media only screen and (max-width: 480px) {
+    .banner-img {
+        background: url('../images/bannermobile.jpg') center no-repeat!important;
+    }
+    
+    .banner {
+        background: url('../images/bannermobile.jpg') center no-repeat!important;
+    }
 }
 
 .accordion button {
@@ -69,19 +86,19 @@ a {
     html {
         height: 100%;
     }
-
+    
     body {
         min-height: 100%;
         position: relative;
-        padding-bottom: 290px;
+        padding-bottom: 240px;
     }
-
+    
     footer {
         position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
-        height: 290px;
+        height: 240px;
         background: #ebf4fa;
     }
 }
@@ -109,5 +126,5 @@ footer a:hover {
 }
 
 .link-grow:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
