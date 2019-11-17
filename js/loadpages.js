@@ -54,28 +54,33 @@ function geraCardapio() {
         hambúrguer tradicional.
     `)
     
-    prices.push('150G – <b>R$ 22,50</b> | 220G – <b>R$ 30,50</b>')
+    prices.push('150G – <b>R$ 26,50</b> | 220G – <b>R$ 30,00</b>')
 
     //4444444444444
     texts.push(`
-        textotexto
+        burger 120g com queijo prato, alface, 
+        tomate e maionese fifties, 
+        no pão de hambúrguer tradicional.
     `)
     
-    prices.push('350G – <b>R$ 39,90</b>')
+    prices.push('150G – <b>R$ 25,50</b> | 350G – <b>R$ 32,90</b>')
 
     //5555555555555
     texts.push(`
-        textotextotexto
+        burger 120g com queijo prato, alface,
+        tomate e maionese fifties, no pão de hambúrguer tradicional.
     `)
     
-    prices.push('350G – <b>R$ 39,90</b>')
+    prices.push('150G – <b>R$ 22,50</b> | 350G – <b>R$ 29,90</b>')
 
     //6666666666666
     texts.push(`
-        textotextotextotexto
+        2 hambúrgueres de 120g, com cheddar, alface,
+        tomate, maionese fifties, mostarda, cebola grelhada , 
+        picles e bacon com um toque de pimenta no pão brioche.
     `)
     
-    prices.push('350G – <b>R$ 39,90</b>')
+    prices.push('350G – <b>R$ 38,50</b>')
 
     for (let i = 1; i <= 6; i++) {
     html += `
