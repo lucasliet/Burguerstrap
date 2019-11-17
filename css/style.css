@@ -29,14 +29,12 @@ a {
     border-radius: 12px;
 }
 
-@media only screen and (max-width: 480px) {
-    .banner-img {
-        background: url('../images/bannermobile.gif') center no-repeat!important;
-    }
-    
-    .banner {
-        background: url('../images/bannermobile.gif') center no-repeat!important;
-    }
+.banner       { display:block; }
+.bannermobile { display:none; }
+
+@media all and (max-width: 499px) {
+    .banner       { display: none; }
+    .bannermobile { display: block; }
 }
 
 .accordion .card-header :hover {
