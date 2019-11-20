@@ -37,6 +37,7 @@ a {
     .bg-purple:active{
         transform: scale(1);
         transition: 0.1s;
+        filter: brightness(0.9);
     }
 }
 
