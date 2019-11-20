@@ -85,7 +85,7 @@ function geraCardapio() {
     for (let i = 1; i <= 6; i++) {
     html += `
         <div class="col-lg-4 col-md-6">
-            <div class="card m-3">
+            <div class="card link-grow m-3">
                 <img alt="picture" src="images/hamburger${i}.jpg" class="img-fluid">
                     <button class="lupa" type="button" data-toggle="modal" data-target="#hamburger${i}">
                         <i class="fa fa-search"></i>

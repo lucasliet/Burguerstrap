@@ -16,6 +16,17 @@ a {
     background-color: #222;
 }
 
+@media all and (min-width: 499px) {
+    .bg-purple{
+        background-color: #572a82;
+        border-radius: 12px;
+    }
+    .bg-purple:hover{
+        transition: 0.2s;
+        transform: scale(1.02);
+    }
+}
+
 .btn-purple{ 
     background-color: #7035a7; 
     color: #eee;
@@ -27,6 +38,7 @@ a {
     background-color: #7035a7;
     transition: 0.3s;
     border-radius: 12px;
+    transform: scale(0.98);
 }
 
 .banner       { display:block; }
@@ -121,14 +133,14 @@ footer a:hover {
 }
 
 .link-grow:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
 }
 
 .black-indicators .carousel-indicators li {
     background-color: #fff;
     background-color: rgba(70, 70, 70, 0.25);
-  }
+}
   
-  .black-indicators .carousel-indicators .active {
+.black-indicators .carousel-indicators .active {
     background-color: #444;
-  }
+}
