@@ -24,62 +24,59 @@ function loadPage(page) {
 function geraCardapio() {
     var html = '';
     
+    var titles = new Array;
+    titles.push('0');
+
     var texts = new Array;
     texts.push('0');
 
     var prices = new Array;
     prices.push('0');
 
-    //1111111111111
+    titles.push('Opção Nº 1');
     texts.push(`
         Duplo cheeseburger com cheddar e bacon crocante, deliciosas onion rings,
         maionese picante e rúcula fresquinha no pão brioche.
     `)
-
     prices.push('350G – <b>R$ 39,90</b>')
 
-    //2222222222222
+    titles.push('Opção Nº 2');
     texts.push(`
         O pioneiro da casa! Traz suculento hamburguer de picanha com alface, cebola
         picadinha,
         queijo prato, picles, super crocante bacon e o indescritível molho rosé, no pão
         brioche.
     `)
-
     prices.push('150G – <b>R$ 27,50</b> | 220G – <b>R$ 35,50</b>')
     
-    //3333333333333
+    titles.push('Opção Nº 3');
     texts.push(`
         burger 240g com Catupiry, tomate e maionese, servido no pão de
         hambúrguer tradicional.
     `)
-    
     prices.push('150G – <b>R$ 26,50</b> | 220G – <b>R$ 30,00</b>')
 
-    //4444444444444
+    titles.push('Opção Nº 4');
     texts.push(`
         burger 120g com queijo prato, alface, 
         tomate e maionese fifties, 
         no pão de hambúrguer tradicional.
     `)
-    
     prices.push('150G – <b>R$ 25,50</b> | 350G – <b>R$ 32,90</b>')
 
-    //5555555555555
+    titles.push('Opção Nº 5');
     texts.push(`
         burger 120g com queijo prato, alface,
         tomate e maionese fifties, no pão de hambúrguer tradicional.
     `)
-    
     prices.push('150G – <b>R$ 22,50</b> | 350G – <b>R$ 29,90</b>')
 
-    //6666666666666
+    titles.push('Opção Nº 6');
     texts.push(`
         2 hambúrgueres de 120g, com cheddar, alface,
-        tomate, maionese fifties, mostarda, cebola grelhada , 
+        tomate, maionese fifties, mostarda, cebola grelhada, 
         picles e bacon com um toque de pimenta no pão brioche.
     `)
-    
     prices.push('350G – <b>R$ 38,50</b>')
 
     for (let i = 1; i <= 6; i++) {
@@ -91,8 +88,9 @@ function geraCardapio() {
                         <i class="fa fa-search"></i>
                     </button>
                     <div class="card-body">
+                        <h2 class="font-weight-bold lead text-uppercase">${titles[i]}</h2>
                         <span class="badge badge-danger p-1 mb-3">${prices[i]}</span>
-                        <p class="card-text">${texts[i]}</p>
+                        <p class="card-text text-justify">${texts[i]}</p>
                     </div>
             </div>
         </div>
