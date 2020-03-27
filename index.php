@@ -14,7 +14,7 @@ switch ($pagina){
         include 'pages/faq.html';
         break;
     case 'produtos':
-        include 'pages/produtos.html';
+        include 'pages/produtos.php';
         break;    
     case 'contato':
         include 'pages/contato.html';
