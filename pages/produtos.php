@@ -12,12 +12,6 @@
             <div class="row justify-content-center">
                 <?php
                         $html = '';
-    
-                        $titles = Array();
-                    
-                        $texts = Array();
-                    
-                        $prices = Array();
                     
                         $titles[1] = 'Opção Nº 1';
                         $texts[1] = '
