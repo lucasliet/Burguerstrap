@@ -4,24 +4,24 @@ $pagina = 'home';
 if (isset($_GET['p'])){
     $pagina = addslashes($_GET['p']);
 }
-include 'view/header.html';
+include 'pages/header.html';
 
 switch ($pagina){
     case 'home':
-        include 'view/home.html';
+        include 'pages/home.html';
         break;
     case 'faq':
-        include 'view/faq.html';
+        include 'pages/faq.html';
         break;
     case 'produtos':
-        include 'view/produtos.html';
+        include 'pages/produtos.html';
         break;    
     case 'contato':
-        include 'view/contato.html';
+        include 'pages/contato.html';
         break;    
     default:
-        include 'view/home.html';
+        include 'pages/home.html';
         break;
 }
 
-include 'view/footer.html';
+include 'pages/footer.html';
