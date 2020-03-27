@@ -1,9 +1,6 @@
 <?php
-$pagina = 'home';
+(isset($_GET['p'])) ? $pagina = addslashes($_GET['p']) : $pagina = 'home';
 
-if (isset($_GET['p'])){
-    $pagina = addslashes($_GET['p']);
-}
 include 'pages/header.html';
 
 switch ($pagina){
