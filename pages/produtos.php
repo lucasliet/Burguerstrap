@@ -14,58 +14,55 @@
                         $html = '';
     
                         $titles = Array();
-                        $titles[] ='0';
                     
                         $texts = Array();
-                        $texts[] = '0';
                     
                         $prices = Array();
-                        $prices[] = '0';
                     
-                        $titles[] = 'Opção Nº 1';
-                        $texts[] = `
+                        $titles[1] = 'Opção Nº 1';
+                        $texts[1] = '
                             Duplo cheeseburger com cheddar e bacon crocante, deliciosas onion rings,
                             maionese picante e rúcula fresquinha no pão brioche.
-                        `;
-                        $prices[] = '350G – <b>R$ 39,90</b>';
+                        ';
+                        $prices[1] = '350G – <b>R$ 39,90</b>';
                     
                         $titles[] = 'Opção Nº 2';
-                        $texts[] = `
+                        $texts[] = '
                             O pioneiro da casa! Traz suculento hamburguer de picanha com alface, cebola
                             picadinha,
                             queijo prato, picles, super crocante bacon e o indescritível molho rosé, no pão
                             brioche.
-                        `;
+                        ';
                         $prices[] = '150G – <b>R$ 27,50</b> | 220G – <b>R$ 35,50</b>';
                         
                         $titles[] = 'Opção Nº 3';
-                        $texts[] = `
+                        $texts[] = '
                             burger 240g com Catupiry, tomate e maionese, servido no pão de
                             hambúrguer tradicional.
-                        `;
+                        ';
                         $prices[] = '150G – <b>R$ 26,50</b> | 220G – <b>R$ 30,00</b>';
                     
                         $titles[] = 'Opção Nº 4';
-                        $texts[] = `
+                        $texts[] = '
                             burger 120g com queijo prato, alface, 
                             tomate e maionese fifties, 
                             no pão de hambúrguer tradicional.
-                        `;
+                        ';
                         $prices[] = '150G – <b>R$ 25,50</b> | 350G – <b>R$ 32,90</b>';
                     
                         $titles[] = 'Opção Nº 5';
-                        $texts[] = `
+                        $texts[] = '
                             burger 120g com queijo prato, alface,
                             tomate e maionese fifties, no pão de hambúrguer tradicional.
-                        `;
+                        ';
                         $prices[] = '150G – <b>R$ 22,50</b> | 350G – <b>R$ 29,90</b>';
                     
                         $titles[] = 'Opção Nº 6';
-                        $texts[] = `
+                        $texts[] = '
                             2 hambúrgueres de 120g, com cheddar, alface,
                             tomate, maionese fifties, mostarda, cebola grelhada, 
                             picles e bacon com um toque de pimenta no pão brioche.
-                        `;
+                        ';
                         $prices[] = '350G – <b>R$ 38,50</b>';
                     
                         for ($i = 1; $i <= 6; $i++) {
